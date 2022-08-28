@@ -1,0 +1,86 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: #FFFFFF;
+    height: 590px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sidebar{
+    width: 90px;
+    height: 600px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+img{
+    height: 40px;
+    width: auto;
+    margin: 25px;
+    color: #FFFFFF;
+}
+
+.active{
+    background-color: #F1D5BB;
+    display: flex;
+}
+.foodgal h1{
+    margin-left: 20px;
+    border-bottom: #F1D5BB 2px solid;
+    width: 200px;
+}
+
+.foodgal{
+    
+    height: 600px;
+    width: 1100px;
+}
+.food{
+    display: flex;
+}
+.food img{
+    height: 220px;
+    width: auto;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+}
+.img p{
+    width: 130px;
+    height: 25px;
+    left: 290px;
+    top: 437px;
+    padding-left: 25px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #000000;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu a button{
+    margin-top: 10px;
+    background-color: #000000;
+    margin-left: 25px;
+    padding: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    }

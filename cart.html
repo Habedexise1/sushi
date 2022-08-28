@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="cart">
+        <div class="sidebar">
+            <a href="index.html"><img src="S..png" alt=""></a>
+            <a href=""><img src="Vector.png" alt=""></a>
+            <a href="menu.html"><img src="img/restaurant_menu_24px.png" alt=""></a>
+            <a href="cart.html" class="active"><img src="img/shopping_cart_24px.png" alt=""></a>
+            <a href=""><img src="place_24px.png" alt=""></a>
+            <a href=""><img src="Group 7.png" alt=""></a>
+        </div>
+        <div class="cart1">
+           <div class="cart2">
+
+            <div class="cart3" >
+                <img src="img/Ellipse 5.png" alt="">
+                <div class="text">
+                    <h3>Smashed Avo</h3>
+                    <p>$20.00</p>
+                </div>
+                <div class="wrapper">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="x">x</div>
+                </div>
+
+                <div class="cart3" >
+                    <img src="img/Ellipse 5.png" alt="">
+                    <div class="text">
+                        <h3>Yin & Yang</h3>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="wrapper">
+                        <span class="minus">-</span>
+                        <span class="num">01</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <div class="x">x</div>
+                    </div>
+
+                    <div class="cart3" >
+                        <img src="img/Ellipse 5.png" alt="">
+                        <div class="text">
+                            <h3>Pancakes</h3>
+                            <p>$25.00</p>
+                        </div>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div class="x">x</div>
+                        </div>
+
+                        <div class="cart3" >
+                            <img src="img/Ellipse 5.png" alt="">
+                            <div class="text">
+                                <h3>Rancheros (Tofu)</h3>
+                                <p>$25.00</p>
+                            </div>
+                            <div class="wrapper">
+                                <span class="minus">-</span>
+                                <span class="num">01</span>
+                                <span class="plus">+</span>
+                            </div>
+                            <div class="x">x</div>
+                            </div>
+
+           </div>
+        
+            <div class="subtotal">
+                    <div class="total">
+                        <div class="h2"><h2>Your Subtotal</h2></div>
+                        <div class="pp">
+                            <div class="p"><p>Subtotal</p></div>
+                            <div class="p"><p>$80.00</p></div>
+                        </div>
+                        <div class="conb">
+                            <p class="con">Confirm Order</p>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <div class="conb">
+                            <h2 class="h">Promo Code</p>
+                        </div>
+                        <div class="conb">
+                            <input type="text" name="enter promo code" class="pcode">
+                        </div>
+                        <div class="pa">
+                            <p class="app">Apply</p>
+                        </div>
+                    </div>
+            </div>
+        </div>   
+    </div>
+          
+
+
+
+
+
+
+<script>
+    const plus = document.querySelector(".plus"),
+     minus = document.querySelector(".minus"),
+     num = document.querySelector(".num");
+
+
+     let a = 1;
+    
+     plus.addEventListener("click", ()=>{
+        a++;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+        console.log(a);
+     });
+     
+     minus.addEventListener("click", ()=>{
+        if(a > 1){
+        a--;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+    }
+     });
+</script>
+
+
+</body>
+</html>
